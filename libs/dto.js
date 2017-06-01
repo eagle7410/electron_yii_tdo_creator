@@ -84,7 +84,7 @@ const saveToFiles = (data) => new Promise(
 		let filesSaved = [];
 		const mainFolder = path.posix.basename(data.pathRoot);
 		let ns = String(data.pathDir);
-		ns = (mainFolder + ns.replace(data.pathRoot, '')).replace('/', '\\');
+		ns = (mainFolder + ns.replace(data.pathRoot, '')).replace(/\//g, '\\');
 
 		['temp-class', 'temp-interface'].forEach(template => {
 			const suff = template === 'temp-class' ? '' : 'Interface';

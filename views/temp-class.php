@@ -16,7 +16,7 @@ class {{= it.className }}
 {{~ it.props :prop}}
     public function get{{= prop.substring(0, 1).toUpperCase() + prop.substring(1) }}()
     {
-        $this->{{= prop}} = ${{= prop}};
+        return $this->{{= prop}} = ${{= prop}};
     }
 {{~}}
 }

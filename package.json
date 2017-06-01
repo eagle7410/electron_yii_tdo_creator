@@ -2,13 +2,13 @@
   "name": "electron_yii_tdo_creator",
   "version": "1.0.0",
   "description": "Create migration for yii2",
-  "main": "index-app.js",
+  "main": "index-app-dev.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
     "pkg-linux": "electron-packager . --overwrite --platform=linux  --arch=x64  --ignore='/app/|/node_modules/(babel*|gulp*|electron*|grunt*)|/.idea/' --icon=database-favicon.ico --prune=true --out=app_build",
-    "pkg-win":   "electron-packager . --asar=true --platform=win32  --arch=ia32 --ignore='/app/|/node_modules/(babel*|gulp*|electron*|grunt*)|/.idea/' --icon=database-favicon.ico --prune=true --out=app_build -version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Electron dto creator'",
-    "pkg-mac":   "electron-packager . --overwrite --platform=darwin --arch=x64  --ignore='/app/|/node_modules/(babel*|gulp*|electron*|grunt*)|/.idea/' --icon=database-favicon.ico --prune=true --out=app_build"
+    "pkg-win": "electron-packager . --asar=true --platform=win32  --arch=ia32 --ignore='/app/|/node_modules/(babel*|gulp*|electron*|grunt*)|/.idea/' --icon=database-favicon.ico --prune=true --out=app_build -version-string.CompanyName=CE --version-string.FileDescription=CE --version-string.ProductName='Electron dto creator'",
+    "pkg-mac": "electron-packager . --overwrite --platform=darwin --arch=x64  --ignore='/app/|/node_modules/(babel*|gulp*|electron*|grunt*)|/.idea/' --icon=database-favicon.ico --prune=true --out=app_build"
   },
   "repository": {
     "type": "git",
@@ -30,6 +30,7 @@
   "dependencies": {
     "dot": "^1.1.1",
     "electron-packager": "^8.7.0",
+    "react-json-editor": "0.3.0",
     "utils-igor": "^2.0.5"
   },
   "devDependencies": {

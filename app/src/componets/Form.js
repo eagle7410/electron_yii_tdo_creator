@@ -34,6 +34,8 @@ export default class Form extends Component {
 		let that = this;
 		let data = that.state;
 
+		data.json = data.json.replace(/'/g, '"');
+
 		try {
 			data.json = JSON.parse(data.json);
 		} catch (e) {
