@@ -2,7 +2,7 @@
   "name": "electron_yii_tdo_creator",
   "version": "1.0.0",
   "description": "Create migration for yii2",
-  "main": "index-app-dev.js",
+  "main": "index-app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron .",
